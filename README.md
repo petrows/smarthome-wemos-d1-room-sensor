@@ -10,8 +10,36 @@ This project designed to provide some simple-to-repeat, DIY sensor with features
 * Uses hi-precision climate sensor module
 * Has three LED's, can bu used to display current CO2 level, as well as for any other purpose
 
+## Assembly
 
+What you need to build this device:
 
+![What you need](doc/what-you-need.jpg "What you need")
+
+Required components are:
+
+* PCB board (TBD), ~2€
+* Wemos D1 mini / pro board. You can use any kind of this device, using USB-C or classical Mini-USB, [Aliexpress](https://de.aliexpress.com/item/1005001621784437.html), ~5€
+* SenseAIR S8 device, original or any of its clones, [Aliexpress](https://de.aliexpress.com/item/1005004123170360.html), ~30€
+* AHT20+BMP280 Temperature Humidity Air Pressure Module, [Aliexpress](https://de.aliexpress.com/item/1005005486181411.html), ~3€
+* 330R wired resistors, 3 pcs, ~1€
+* 3mm LED's, color on your with, 3 pcs, ~1€
+* Electrolytic capacitor (optional), suitable any rated 10+ V and 300+ Mf, ~1€
+* Common 2.54mm pin headers: male and female, ~1€
+
+Total components price: ~44€
+
+## Case
+
+There is a case for 3D print provided. Files can be found under `3d-case` folder.
+
+> **WARNING**: to use this device within closed case, check and apply calibration. ESP and S8 sensors going warm during work, and it will affect tempterature sensor.
+
+Recommended calibration for this case: `-2 C°`. To apply calibration, navigate to `Console` and type in command:
+
+```
+TempOffset -2
+```
 
 ## Tasmota config
 
