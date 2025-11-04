@@ -2,8 +2,9 @@
 
 ![Device image](doc/device-pic.jpg)
 
-This project designed to provide some simple-to-repeat, DIY sensor with features:
+This project designed to provide some simple-to-repeat, WiFi DIY sensor with features:
 
+* Telemetry to Smarthome systems: CO² level, Temperature, Humidity and Pressure
 * Runs Tasmota out-of-the-box, no DIY firmware required, all Tasmota features are on place (WebUI, MQTT, etc)
 * Uses cheap Wemos-D1 board as CPU and WiFi
 * Do not require SMD components installation, can be assembled with regural solder
@@ -37,6 +38,12 @@ All elements, except MCU and PCB borad are *optional*. Device can be also assemb
 **Board is designed to fit into standart 60x60 mm electric box**. I use it at my home to meausre outside temperature (CO² sensor and LED's are not installed).
 
 ![Electric box version](doc/electric-box.jpg)
+
+## PCB Borad
+
+Hardware project page: https://oshwlab.com/petrows/wemos-d1-room-sensor
+
+PCB can be purchased directly from Project page.
 
 ## Case
 
