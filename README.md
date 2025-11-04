@@ -47,6 +47,12 @@ Hardware project page: https://oshwlab.com/petrows/wemos-d1-room-sensor
 
 PCB can be purchased directly from Project page.
 
+## Firmware
+
+Download here: https://github.com/petrows/smarthome-galoped/releases
+
+Regarding flashing / config / recompile: see below
+
 ## Case
 
 There is a case for 3D print provided. Files can be found under `3d-case` folder. Model published on [thingiverse.com website](https://www.thingiverse.com/thing:7191151).
@@ -138,6 +144,4 @@ platformio run -e tasmota --target upload --upload-port /dev/ttyUSB0
 
 Precompiled firmware can be found under `.pio/build/tasmota/firmware.bin`.
 
-Precompiled firmwares could be found here:
-* [Version 14.3.0](https://petro.ws/s/tasmota-14.3.0-pws-module-v2.bin)
-* [Version 15.1.0](https://petro.ws/s/tasmota-15.1.0-pws-module-v2.bin)
+Precompiled firmwares could be found here: https://github.com/petrows/smarthome-galoped/releases
