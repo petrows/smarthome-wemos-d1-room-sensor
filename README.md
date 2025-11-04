@@ -4,7 +4,7 @@
 
 This project designed to provide some simple-to-repeat, WiFi DIY sensor with features:
 
-* Telemetry to Smarthome systems: CO² level, Temperature, Humidity and Pressure
+* Telemetry to Smarthome systems: CO2 level, Temperature, Humidity and Pressure
 * Runs Tasmota out-of-the-box, no DIY firmware required, all Tasmota features are on place (WebUI, MQTT, etc)
 * Uses cheap Wemos-D1 board as CPU and WiFi
 * Do not require SMD components installation, can be assembled with regural solder
@@ -19,6 +19,8 @@ This project designed to provide some simple-to-repeat, WiFi DIY sensor with fea
 What you need to build this device:
 
 ![What you need](doc/what-you-need.jpg "What you need")
+
+[Detailed assembly instructions](README.Assembly.md).
 
 Required components are:
 
