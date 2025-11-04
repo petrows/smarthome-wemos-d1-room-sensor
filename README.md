@@ -57,7 +57,7 @@ Then configure Tasmota as usial, by connecting to built-in WiFI AP.
 
 Next step is to apply template. Navigate to `Configuration` » `Other`. There in `Template` section paste template:
 ```json
-{"NAME":"PWS-Room-v2","GPIO":[1,1,1,1,608,640,1,1,224,1632,225,1600,226,1],"FLAG":0,"BASE":18}
+{"NAME":"PWS-Room-v2","GPIO":[1,1,1,1,608,640,1,1,224,1632,225,1600,226,1],"FLAG":0,"BASE":18,"CMND":"Interlock 1|WebButton1 R | WebButton2 Y | WebButton3 G"}
 ```
 Enable `Activate` checkbox. Press `Save` to apply template.
 

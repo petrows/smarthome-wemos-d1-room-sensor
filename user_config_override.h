@@ -87,8 +87,21 @@ Examples :
 // !!! Remember that your changes GOES AT THE BOTTOM OF THIS FILE right before the last #endif !!!
 */
 
+// Activate used sensors: ANT2X, BMP and SENSEAIR S8
 #define USE_BMP
 #define USE_AHT2x
 #define USE_SENSEAIR
+
+// My template defaults, apply on flash reset.
+// You may skip this templay application, in this case please apply manually (see README.md)
+#define USER_TEMPLATE "{\"NAME\":\"PWS-Room-v2\",\"GPIO\":[1,1,1,1,608,640,1,1,224,1632,225,1600,226,1],\"FLAG\":0,\"BASE\":18,\"CMND\":\"Interlock 1|WebButton1 R | WebButton2 Y | WebButton3 G | Rule1 ON\"}"
+// Activate template on reset/flash new
+#define MODULE USER_MODULE
+
+// Basic rules to control the RGB LED based on CO2 levels
+#define CO_LEVEL_YELLOW "800"
+#define CO_LEVEL_RED "1500"
+// Define rule:
+#define USER_RULE1 "ON S8#CarbonDioxide<" CO_LEVEL_YELLOW " DO Power3 1 BREAK ON S8#CarbonDioxide<" CO_LEVEL_RED " DO Power2 1 BREAK ON S8#CarbonDioxide>0 DO Power1 1 ENDON"
 
 #endif  // _USER_CONFIG_OVERRIDE_H_
